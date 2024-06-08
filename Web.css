@@ -1,0 +1,761 @@
+/*  By Rahul Saxena   */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color:  white;
+    overflow:auto;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+background: rgba(131, 58, 180, 0);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+    padding: 1.5rem 2.4rem;
+}
+.nav h3{
+    font-size: 1.04rem;
+    font-weight: bold;
+    padding:1rem 1rem ;
+    margin-top: 60px;
+    color:white;
+    border: none;
+    background-color: rgb(104, 80, 80);
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(40px);
+    top:85%;
+    z-index:0;
+}
+.nav h3 i{
+     font-weight: 700;
+     font-size: 1.23rem;
+     padding: 0.66rem; 
+}
+.nav h3:hover{
+    cursor: pointer;
+    box-shadow: inset 5px 5px 10px blue, 
+    inset -5px -5px 10px black;
+    -webkit-box-shadow:0px 0px 80px 30px rgba(191,13,117,0.78);
+    -moz-box-shadow: 0px 0px 80px 30px rgba(211,13,117,0.78);
+    box-shadow: 0px 0px 80px 30px rgba(101,13,117,0.78);    
+    color: orange;
+    /* border: 2px solid salmon; */
+}
+.intro{
+    min-height: 30%;
+    width: 100%;
+    padding: 3.5rem 4rem;
+    background: rgb(131,58,180);
+    /*cssgradient.io   */
+    background: linear-gradient(145deg, rgba(131,58,180,1) 49%, rgba(252,176,69,1) 100%);
+    border-bottom:5px solid white ;
+   }
+.intro h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(228, 228, 200);
+    width: 100%;
+    font-size: 5rem;
+    background-image: url(https://plus.unsplash.com/premium_photo-1697729863537-564226f302fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHx8fA%3D%3D);
+    -webkit-background-clip: text;
+    background-clip: none;
+    background-position: right;
+    -webkit-text-fill-color: transparent;
+    font-family: "Luckiest Guy", cursive;
+    opacity: 0.77;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    line-height: 1;  /*dont use unit here */  
+}
+.visit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;  
+}
+.visit h3,.visit h4{
+    color: rgb(203, 207, 235);
+    font-size:1.04rem;
+    font-weight: 700;
+}
+.visit h4:hover{
+    cursor: pointer;
+}
+.image-1{
+    width: 100%;
+    height: 80%;    
+}
+.image-1 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
+}
+#about{
+    width: 100%;
+    min-height: 40%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;  
+    padding: 5rem; 
+    background: rgb(219, 165, 37);
+background: linear-gradient(257deg, rgb(201, 77, 77,0.90) 0%, rgba(230,164,15,1) 77%);
+    border-bottom: 2px solid rgb(201, 77, 77);
+}
+#about h2{
+    width: 60%;
+    font-size: 2.99rem;
+    line-height: 58px;
+    letter-spacing: -1px;
+    color: rgb(219, 215, 215);
+}
+.about2{
+    width: 35%;
+    min-height: 80%;
+    border-left: 2px solid rgb(201, 77, 77);
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+.about2 h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(250,37,13);
+    padding: 4rem;
+    text-align: center;
+    margin:-4rem -170px 4rem -80px;
+}
+#about h2 i{
+    color: rgb(228, 77, 77);
+}
+.icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 7rem;
+    margin-left: 2rem;
+}
+.icons i{
+    color: white;
+    border-radius: 40px;
+    padding: 0.7rem;
+    font-size: 2rem;
+    background-color: rgb(250, 37, 13);
+    margin-right: 1.6rem;
+}
+.icons i:hover{
+    color: black;
+    cursor: pointer;  
+ /* custom styles for text shadow  */
+    text-shadow:0px 0px 6 20px red;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.exp{
+    width: 100%;
+    min-height: 80%;
+    display: flex;
+    background: rgb(168,64,147);
+background: linear-gradient(145deg, rgba(168,64,147,1) 48%, rgba(252,238,69,1) 100%);
+    padding: 4.6rem 0;
+}
+.exp1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 32%;
+    height: 40%; 
+    padding: 3rem 2rem;
+    border-right: 3px solid rgb(201,77,77);
+}   
+.exp1 h3{
+    font-size: 1.67rem;
+    font-weight: 600;
+    color: rgb(209, 44, 44);
+}
+.exp1 i{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.81rem;
+    color: tomato;
+}
+.exp2{
+    width: 68%;
+    min-height:90%;
+    display: flex;
+    flex-direction: column;
+    border-left:3px solid  rgb(201, 77, 77);
+}
+.min1{
+    display: flex;
+    width: 100%;
+    min-height: 40%;
+}
+.small1{
+    width: 50%;
+    height: 100%;
+}
+.small1 h3{
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem;
+}
+/* Color animation infinitely working smooth */
+.small1 h3,
+.small2 h3,
+.small3 h3,
+.small4 h3{
+background-image: -webkit-linear-gradient(120deg, #f2291b, #f7db25, #84f527);
+-webkit-background-clip: text;
+background-clip: none;
+-webkit-text-fill-color: transparent;
+-webkit-animation: hue 10s infinite linear;
+}
+@-webkit-keyframes hue {
+from {
+-webkit-filter: hue-rotate(0deg);
+}
+to {
+-webkit-filter: hue-rotate(-360deg);
+}
+}
+/* animations for the special divs */
+@keyframes motion{
+    from{
+        opacity:0;
+        scale:0.5;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+}
+.small1,
+.small2,
+.small3,
+.small4,
+#about h2,
+.about h3,
+.icons,
+.exp h3,i{
+    animation: motion linear;
+    animation-timeline:view();
+    animation-range: entry 0 cover 50%;
+}
+
+.small1 p{
+     padding: 1rem 2.1rem;
+     color: skyblue;
+     font-size: 1.4rem;
+}
+.small1 p i{
+    color: red;
+    font-size: 24px;
+    
+}
+.small2{
+    width: 50%;
+    height: 100%;
+}
+.small2 h3{
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem; 
+}
+.small2 p{
+     padding: 1rem 2.1rem;
+     color: skyblue;
+     font-size: 1.4rem;  
+}
+.small2 p i{
+    
+    color: red;
+    font-size: 24px;
+    
+}
+.min2{
+    display: flex;
+    width: 100%;
+   min-height: 40%;
+    
+}
+.small3{
+    width: 50%;
+    height: 100%;
+}
+.small3 h3{
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem;
+}
+.small3 p{
+     padding: 1rem 2.1rem;
+     color: skyblue;
+     font-size: 1.4rem;
+}
+.small3 p i{
+    
+    color: red;
+    font-size: 24px;
+    
+}
+.small4{
+    width: 50%;
+    height: 100%;
+}
+.small4 h3{
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem;
+}
+.small4 p{
+     padding: 1rem 2.1rem;
+     color: skyblue;
+     font-size: 1.4rem;
+     
+}
+.small4 p i{
+    
+    color: red;
+    font-size: 24px;
+    
+}
+footer{
+    width: 100%;
+    height: 10%;
+    background: rgb(223,77,82);
+    background: linear-gradient(225deg, rgba(223,77,82,1) 28%, rgb(168, 161, 85) 100%);
+}
+footer center{
+    text-align: center;
+    background: #432ACF;
+    background: linear-gradient(to right, #2FFBEF 40%, #1FFBCF 60%);
+    opacity:0.75;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 1.1rem;
+}
+@media (max-width:840px) {
+    .nav h3{
+        font-size: 1.001rem;
+        font-weight: bold;
+        padding:1.287rem 1.2rem ;
+        margin-top: 50px;
+    }
+    .intro h1{
+        letter-spacing: 1.87px; 
+        line-height: 1.1;        
+        font-size: 4rem;  
+    }
+    #about h2{
+        width: 60%;
+        font-size: 2.77rem;
+    }
+    .about2 h3{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    .icons{
+        margin-top: 4rem;
+        margin-left: -3.2rem;
+    }
+    .exp1{
+        width: 40%;
+        height: 40%; 
+        padding: 3rem 2rem;
+    }
+    .min1,
+    .min2{
+        width: 100%;
+        min-height: 20%;
+    }
+    .small1,
+    .small2,
+    .small3,
+    .small4{
+        width: 55%;
+        height: 81%;
+    }
+    .small1 h3,
+    .small2 h3,
+    .small3 h3,
+    .small4 h3{
+        font-size: 1.77rem;
+        padding: 0.91rem 1.2rem;
+    }
+    .small1 p,
+    .small2 p,
+    .small3 p,
+    .small4 p{
+        padding: 0.99rem 2rem;
+        color:skyblue;
+        font-size: 1.5rem;
+        width: 109%;   
+   }    
+}
+@media (max-width:770px) {
+    .min1,
+    .min2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 40%;
+    }
+    .small1,
+    .small2,
+    .small3,
+    .small4{
+        width: 80%;
+        height: 50%;
+    }
+    .small1 h3,
+    .small2 h3,
+    .small3 h3,
+    .small4 h3{
+        font-size: 2.2rem;
+        padding: 1rem 1.5rem;
+        color: white;
+    }
+    .small1 p,
+    .small2 p,
+    .small3 p,
+    .small4 p{
+         padding: 0.22rem 1.90rem;
+         color: skyblue;
+         font-size: 1.6rem;
+    }
+}
+@media (max-width:650px) {
+        .nav h3{
+            font-size: 1.014rem;
+            padding:1.21rem 1.25rem ;
+            margin-top: 60px;
+            color: white;
+            border: none;
+            position: absolute;
+            border-radius: 12px;
+            left: 70%;
+        }
+        .intro h1{
+            letter-spacing: 1.90px;
+            width: 100%;
+            height: 30%;
+            font-size: 3rem;
+            line-height: 1;
+        }
+        .intro{
+            padding: 3.5rem 2.2rem;
+           }
+        #about h2{
+            width: 80%;
+            font-size: 2.10rem;
+            line-height: 46px;
+            letter-spacing: -1px;
+        }
+        .about2 h3{
+            font-size: 1.89rem;
+            padding: 1.77rem;
+        }
+        .icons{
+            margin-top: 3.22rem;
+            margin-left: -3.88rem;
+            padding: 0.41rem;
+            font-size: 1.698rem;
+        }
+}
+@media (max-width:580px) {
+        .nav h3{
+            font-size: 1rem;
+            padding:1.16rem 1.20rem ;
+            margin-top: 60px;
+            border-radius: 12px;
+           
+        }
+        .intro h1{
+            letter-spacing: 1.84px;
+            width: 70%;
+            height: 30%;
+            font-size: 2.67rem;
+            line-height: 1;
+        }
+        .intro{
+            padding: 3.3rem 2rem;
+           }  
+           .intro h1{
+            letter-spacing: 1.90px;
+            width: 100%;
+            height: 30%;
+            font-size: 3rem;
+            line-height: 1;
+        }
+        .intro{
+            padding: 3.5rem 2.2rem;
+           }
+           #about h2{
+            width: 80%;
+            font-size: 2rem;
+            line-height: 38px;
+            letter-spacing: -1px;
+        }
+        .about2 h3{
+            font-size: 1.89rem;
+            padding: 1.60rem;
+        }
+        .icons{
+            margin-top: 3rem;
+            margin-left: -4rem;
+            padding: 0.41rem;
+            font-size: 1.658rem;
+        }
+        .icons i{
+            padding: 0.6rem;
+            font-size: 1.9rem;
+            background-color: rgb(250, 37, 13);
+            margin-right: 1.6rem;
+        }            
+}
+@media (max-width:460px) {
+    .nav{
+            padding: 1.5rem 2rem;
+            position: fixed;
+            width: 100%; 
+    }        
+    .nav h3{
+        font-size: 1.014rem;
+        padding:1rem 1rem ;
+        margin-top: 115px;
+        border-radius: 30px;
+        position: absolute;
+        border-radius: 12px;
+        left: 70%;
+    }
+    .intro h1{
+        letter-spacing: 1.50px;
+        width: 100%;
+        height: 30%;
+        font-size: 2.60rem;
+        line-height: 1;
+    }
+    .intro{
+        padding: 3rem 2rem;
+       }
+    #about{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        padding: 2rem 4rem;
+        
+    }
+    #about h2{
+        width: 100%;
+        font-size: 2.2rem;
+        line-height: 60px;
+        color: rgb(219, 215, 215);
+        border-bottom: 4px solid white;
+    }
+    .about2{
+        display:flex ;
+        justify-content: space-around;
+        width: 100%;
+        border-left: none; 
+    }
+    .about2 h3{
+        font-size: 2.1rem;
+       padding: 2rem;
+       margin-left: -12rem;
+       color: rgb(250,37,13);
+    }
+    .icons{
+        /* margin-top: 3px ; */
+        margin-left: -4rem;
+        padding: 0.41rem;
+        font-size: 1.858rem;
+    }
+    .exp{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 2rem;
+    }
+    .exp1{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 20%; 
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 3px solid white;
+    }   
+    .exp1 h3{
+        font-size: 2.87rem;
+        font-weight: 600;
+        color: rgb(219, 215, 215);
+    }
+    .exp1 i{
+        display: none;
+    }
+    .exp2{
+        width: 100%;
+        border-left:none;
+    }
+    .small1,
+    .small2,
+    .small3,
+    .small4{
+        width: 100%;
+        height: 50%;
+    }
+    .small1 h3,
+    .small2 h3,
+    .small3 h3,
+    .small4 h3{
+        font-size: 2.2rem;
+        padding: 1.61rem 2.2rem;
+       
+    }
+    .small1 p,
+    .small2 p,
+    .small3 p,
+    .small4 p{
+         padding: 0.61rem 2.2rem;
+         color: skyblue;
+         font-size: 1.67rem;
+         font-weight: 500;
+         line-height: 1.4;
+    }
+}
+@media (max-width:377px) {
+    footer{
+        width: 100%;
+        height: 16%;
+       }
+    footer center{
+        font-size: 1.2rem;
+        padding: 1.3rem 2rem;
+       }
+    .nav h3{
+        font-size: 1rem;
+        padding:0.50rem 1.56rem ;
+        margin-top: 105px;
+        position: absolute;
+        border-radius: 12px;
+        left: 60%;
+    }
+    .intro h1{
+        letter-spacing: 1.40px;
+        width: 100%;
+        height: 30%;
+        font-size: 2.40rem;
+        line-height: 1;
+    }
+    .intro{
+        padding: 2.76rem 1.77rem;
+       }
+    .image-1 img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:left;
+    }
+    #about{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        padding: 2rem 2rem;  
+    }
+    #about h2{
+        width: 100%;
+        font-size: 1.94rem;
+        line-height: 55px;
+        color: rgb(219, 215, 215);
+        border-bottom: 4px solid white;
+    }
+    .about2{
+        display:flex ;
+        justify-content: space-around;
+        width: 71%;
+        border-left: none;
+    }
+    .about2 h3{
+       font-size: 1.89rem;
+       padding: 1.59rem;
+       margin-left: -10rem;
+       color: rgb(250,37,13);
+    }
+    .icons{
+        margin-left: -5.8rem;
+        padding: 0.30rem;
+        font-size: 1.698rem;
+    }
+    .exp{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1.67rem;
+    }
+    .exp1{
+        padding: 0.90rem;
+        border-right: none;
+        border-bottom: 4px solid white;
+    }   
+    .exp1 h3{
+        font-size: 2.57rem;
+        font-weight: 600;
+        color: rgb(219, 215, 215);
+        padding: 0.3rem;
+    }
+    .exp1 i{
+        display: none;
+    }
+    .small1 h3,
+    .small2 h3,
+    .small3 h3,
+    .small4 h3{
+        font-size: 2.01rem;
+        padding: 1.61rem 2.4rem;
+       
+    }
+    .small1 p,
+    .small2 p,
+    .small3 p,
+    .small4 p{
+         padding: 0.41rem 1.45rem;
+         color: skyblue;
+         font-size: 1.67rem;
+         font-weight: 500;
+         line-height: 1.4;
+         opacity: 0.71;
+         border-left: 6px solid white;
+    }
+    .visit h3{
+    color: rgb(203, 207, 235);
+    font-size:1.01rem;
+    font-weight: 700;
+}
+}
+/* useful resources 
+  cssgradient.io  
+  googlefonts
+  googlefonts/icons
+  unsplash.com /images
+  
+
+*/
